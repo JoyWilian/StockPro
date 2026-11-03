@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Controle de Estoque</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside class="menu-lateral">
+            <h2>Stock<span>Pro</span></h2>
+
+            <nav>
+                <a href="#" class="link-menu ativo">Painel</a>
+                <a href="#cadastro" class="link-menu">Cadastrar Produto</a>
+                <a href="#produtos" class="link-menu">Produtos</a>
+            </nav>
+        </aside>
+
+        <main class="conteudo-principal">
+
+            <header class="cabecalho">
+                <div>
+                    <h1>Controle de Estoque</h1>
+                    <p>Gerencie seus produtos em um só lugar.</p>
+                </div>
+            </header>
+
+            <div class="indicadores">
+
+                <div class="indicador-card">
+                    <div class="indicador-icone">📦</div>
+                    <div>
+                        <p>Produtos cadastrados</p>
+                        <h2 id="total-produtos">0</h2>
+                    </div>
+                </div>
+
+                <div class="indicador-card">
+                    <div class="indicador-icone">💰</div>
+                    <div>
+                        <p>Valor total do estoque</p>
+                        <h2 id="valor-total-estoque">R$ 0,00</h2>
+                    </div>
+                </div>
+
+                <div class="indicador-card">
+                    <div class="indicador-icone">⚠️</div>
+                    <div>
+                        <p>Produtos com estoque baixo</p>
+                        <h2 id="estoque-baixo">0</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <section id="cadastro">
+                <h2>Cadastrar Produto</h2>
+
+                <form id="form-produto">
+
+                    <label for="produto">Nome do produto:</label>
+                    <input type="text" id="produto">
+
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" min="0" step="1">
+
+                    <label for="preco">Preço:</label>
+                    <input type="number" id="preco" min="0" step="0.01">
+
+                    <button type="submit">Cadastrar</button>
+
+                </form>
+            </section>
+
+            <section id="produtos">
+                <h2>Produtos Cadastrados</h2>
+
+                <input type="text" id="pesquisa-produto" placeholder="Pesquisar pelo nome...">
+
+                <select id="filtro-estoque">
+                    <option value="todos">Todos os produtos</option>
+                    <option value="baixo">Somente estoque baixo</option>
+                </select>     
+                
+            <select id="ordenar-produtos">
+                <option value="padrao">Ordem padrão</option>
+                <option value="nome">Nome (A-Z)</option>
+                <option value="quantidade">Menor quantidade</option>
+                <option value="preco">Menor preço</option>
+            </select>
+                
+                <div id="lista-produtos"></div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <div id="popup-confirmacao" class="popup">
+        <div class="popup-conteudo">
+            <div class="icone-alerta">!</div>
+            <h2>Excluir Produto?</h2>
+            <p>Tem certeza que deseja excluir este produto?</p>
+
+            <button id="btn-cancelar">Cancelar</button>
+            <button id="btn-confirmar-exclusao">Excluir</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
