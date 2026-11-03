@@ -2,7 +2,7 @@
 
 Sistema web para gerenciamento de estoque, desenvolvido como projeto prático de aprendizado e portfólio na área de desenvolvimento de sistemas.
 
-**🚀 Funcionalidades**
+** Funcionalidades**
 
 - Cadastro de produtos.
 - Edição e exclusão de produtos.
@@ -14,7 +14,7 @@ Sistema web para gerenciamento de estoque, desenvolvido como projeto prático de
 - Armazenamento de dados utilizando LocalStorage.
 - Interface responsiva para computadores, tablets e celulares.
 
-**🛠️ Tecnologias utilizadas**
+** Tecnologias utilizadas**
 
 - HTML5
 - CSS3
@@ -27,7 +27,7 @@ Sistema web para gerenciamento de estoque, desenvolvido como projeto prático de
 2. Abra a pasta do projeto.
 3. Execute o arquivo `index.html` no navegador.
 
-**🎯 Objetivo do projeto**
+** Objetivo do projeto**
 
 O StockPro foi desenvolvido com o objetivo de colocar em prática conhecimentos de desenvolvimento web, manipulação do DOM, lógica de programação, armazenamento local e versionamento de código.
 
