@@ -14,14 +14,14 @@ Sistema web para gerenciamento de estoque, desenvolvido como projeto prático de
 - Armazenamento de dados utilizando LocalStorage.
 - Interface responsiva para computadores, tablets e celulares.
 
-** Tecnologias utilizadas**
+**Tecnologias utilizadas**
 
 - HTML5
 - CSS3
 - JavaScript
 - Git e GitHub
 
-**💻 Como executar o projeto**
+**Como executar o projeto**
 
 1. Faça o download ou clone este repositório.
 2. Abra a pasta do projeto.
